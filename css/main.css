@@ -1,0 +1,17 @@
+/*
+  MAIN ENTRY POINT
+  CASCADE STRATEGY
+  Order, low -> high priority:
+  reset -> base -> layout -> components -> utilities -> states
+*/
+
+@layer reset, base, layout, components, utilities, states;
+
+@import url("01-tokens.css");
+@import url("02-reset.css");
+@import url("03-base.css");
+@import url("04-layout.css");
+@import url("05-components.css");
+@import url("06-utilities.css");
+@import url("07-states.css");
+@import url("08-print.css");
