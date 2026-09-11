@@ -1,0 +1,59 @@
+/* 03-BASE */
+
+@layer base {
+  body {
+    background-color: var(--color-band-experience);
+    color: var(--color-text-on-band);
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-body);
+  }
+
+  h1, h2, h3 {
+    line-height: var(--line-height-heading);
+    font-weight: var(--font-weight-bold);
+  }
+
+  h2 { font-size: var(--font-size-2xl); }
+  h3 { font-size: var(--font-size-lg); }
+
+  h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-md);
+  }
+
+  p {
+    max-width: var(--measure-prose);
+  }
+
+  small {
+    font-size: var(--font-size-sm);
+  }
+
+  a {
+    color: var(--color-link);
+    text-underline-offset: 0.15em;
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #4B6B63;
+  }
+
+ 
+  :focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+    border-radius: var(--radius-sm);
+  }
+
+  hr {
+    border: none;
+    border-top: var(--border-width) solid var(--color-border-on-band);
+    margin-block: var(--space-8);
+  }
+}
