@@ -70,6 +70,11 @@
     grid-template-columns: 1fr;
   }
 
+  .card-slot {
+    container-type: inline-size;
+    container-name: card;
+  }
+
   .stack > * + * {
     margin-top: var(--space-4);
   }
