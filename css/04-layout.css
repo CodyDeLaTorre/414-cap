@@ -1,0 +1,96 @@
+/*
+  04-LAYOUT
+*/
+
+@layer layout {
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .site > main {
+    flex: 1;
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-pad-inline);
+  }
+
+  .band {
+    padding-block: var(--space-16);
+  }
+
+  .band--hero {
+    background: var(--color-band-hero);
+    color: var(--color-text-on-band);
+  }
+
+  .band--about {
+    background: var(--color-band-about);
+    color: var(--color-text-on-band);
+  }
+
+  .band--experience {
+    background: var(--color-band-experience);
+    color: var(--color-text-on-band);
+  }
+
+  .band--skills {
+    background: var(--color-band-skills);
+    color: var(--color-text-on-band);
+  }
+
+  .band--tight {
+    padding-block: var(--space-12);
+  }
+
+  .band-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .band-header--center {
+    text-align: center;
+  }
+
+  .hero {
+    display: grid;
+    gap: var(--space-8);
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Cluster: two-up card groups ---- */
+  .cluster {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1fr;
+  }
+
+  .stack > * + * {
+    margin-top: var(--space-4);
+  }
+
+  .stack-lg > * + * {
+    margin-top: var(--space-10);
+  }
+
+  @media (min-width: 48rem) {
+    .hero {
+      grid-template-columns: 1fr 1.4fr;
+    }
+
+    .cluster {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .band {
+      padding-block: var(--space-24);
+    }
+  }
+}
