@@ -44,7 +44,6 @@
     color: #4B6B63;
   }
 
- 
   :focus-visible {
     outline: var(--focus-ring);
     outline-offset: var(--focus-offset);
