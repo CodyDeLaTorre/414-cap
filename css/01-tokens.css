@@ -33,16 +33,13 @@
 
   --color-link: #02735E;
   --color-link-hover: #014040;
-  --color-link-on-band: #FFFFFF;
-  --color-link-on-band-hover: #02735E;
 
   --font-heading: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --font-tracked: Arial, Helvetica, sans-serif;
   --font-card-body: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-badge: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-md: 1.125rem;
@@ -84,7 +81,7 @@
   --border-width: 1px;
   --border-width-thick: 2px;
 
-  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.12);
   --shadow-card-hover: 0 10px 20px rgba(0, 0, 0, 0.7);
 
   --focus-color: #4DA3FF;
