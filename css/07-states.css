@@ -1,0 +1,18 @@
+@layer states {
+  a:hover, button:hover, [role="button"]:hover { cursor: pointer; }
+  :focus-visible { outline: var(--focus-ring) !important; outline-offset: var(--focus-offset); }
+  .btn:active { transform: translateY(1px); }
+  [disabled], .is-disabled { opacity: .6; pointer-events: none; }
+  .is-loading { opacity: .7; }
+
+  body:has(#theme-toggle-input:checked) .site {
+    --color-band-hero: #012E2E;
+    --color-band-about: #015447;
+    --color-band-experience: #103A32;
+    --color-band-skills: #141414;
+    --color-band-footer: #141414;
+    --color-tile-dark: #141414;
+    --color-card: #EDEBE6;
+    --color-text-on-card: #141414;
+  }
+}

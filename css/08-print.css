@@ -1,0 +1,15 @@
+@media print {
+  .nav, .u-skip-link, .footer__social, .btn, .theme-toggle { display: none !important; }
+  * { background: #FFFFFF !important; color: #000000 !important; box-shadow: none !important; }
+  body { font-size: 11pt; line-height: 1.4; }
+  .card, .callout { border: 1px solid #000000 !important; break-inside: avoid; }
+  .hero { display: block; }
+  .polaroid { transform: none; box-shadow: none; border: 1px solid #000000; }
+  .window-card__chrome { display: none; }
+  .skill-grid, .timeline__tags { display: block; }
+  .timeline { border-left: 1px solid #000000; }
+  .timeline__item::before { background: #000000 !important; border-color: #FFFFFF !important; }
+  h1, h2, h3 { break-after: avoid; }
+  a[href^="http"]::after, a[href^="mailto"]::after { content: " (" attr(href) ")"; font-size: 9pt; font-weight: normal; }
+  .footer__row { padding-block: .5cm; }
+}
