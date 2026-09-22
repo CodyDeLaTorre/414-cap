@@ -6,6 +6,43 @@
   <title>Cody De La Torre — Front-End Developer</title>
   <meta name="description" content="Portfolio and resume site for Cody De La Torre." />
   <link rel="stylesheet" href="css/main.css" />
+   <!--
+       MODULE 4 ASSET INVENTORY:
+
+       IMAGES
+       1. headshot (images/headshot-*.jpg / .webp)
+          Purpose: informative - identifies who the site belongs to.
+          Source/license: taken by a professional photographer for a family
+            photo session; used here with their permission.
+          Original: single JPEG master, 621x749px, 97.5KB, from a Canon EOS
+            Rebel SL3.
+          Optimization performed: cropped to the actual 4:5
+            ratio the .polaroid component displays and re-encoded at 3 widths
+            (240/320/480) in both JPEG and WebP. See srcset below.
+
+       SVGs:
+       2. Hero "laptop/code" icon - decorative icon adds visual interest, 
+          aria-hidden="true".
+       3. Polaroid overlay icons (Python/React/JavaScript)
+          decorative relative to the alt text on the photo itself, which
+          already names the person. 
+          aria-hidden="true".
+       4. Footer social icons - the icon alone doesn't
+          convey "GitHub" or "LinkedIn" to a screen reader without a label,
+          so the parent <a> carries a real aria-label and the svg itself is
+          aria-hidden to avoid the link being announced twice.
+       5. Corner nav hamburger lines - decorative, the <label> already has
+          a for/id relationship with real toggle semantics and the lines get
+          aria-hidden.
+
+       MEDIA
+          None on this site.
+
+       FONTS
+          See css/01-tokens.css for typography - all 5 stacks are OS system
+          fonts. No font-face, font host, or license to name, and no
+          loading strategy needed.
+      */
 </head>
 <body>
   <a class="u-skip-link" href="#main">Skip to content</a>
