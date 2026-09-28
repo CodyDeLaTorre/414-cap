@@ -25,7 +25,7 @@
   }
 
   .band--hero {
-    background: var(--color-sband-hero);
+    background: var(--color-band-hero);
     color: var(--color-text-on-band);
   }
 
