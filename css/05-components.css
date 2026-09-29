@@ -53,7 +53,7 @@
     cursor: pointer;
   }
 
-  .nav__toggle-label span {
+  .nav__toggle-label span[aria-hidden] {
     display: block;
     height: 2px;
     background: var(--nav-fg);
