@@ -44,6 +44,7 @@
   }
 
   .nav__toggle-label {
+    margin-inline-start: auto;
     display: inline-flex;
     flex-direction: column;
     gap: 5px;
@@ -79,7 +80,7 @@
     transition: max-height var(--transition-medium), visibility var(--transition-medium);
   }
 
-  .nav__toggle-input:checked ~ .nav__list {
+  .nav__toggle-input:checked ~ .nav__menu .nav__list {
     max-height: 20rem;
     visibility: visible;
   }
@@ -105,7 +106,8 @@
   }
 
   @media (min-width: 48rem) {
-    .nav__toggle-label { display: none; }
+    .nav__toggle-label,
+    .nav__toggle-input { display: none; }
 
     .nav__list {
       position: static;
@@ -126,11 +128,12 @@
     text-transform: uppercase;
     letter-spacing: var(--tracked-caps-letter-spacing);
     font-size: var(--font-size-md);
-    color: var(--color-accent);
+    color: var(--color-accent-on-dark);
     text-align: center;
   }
 
-  .band--skills .tracked-caps {
+  .band--skills .tracked-caps,
+  .band--about .tracked-caps {
     color: #FFFFFF;
   }
 
@@ -138,19 +141,19 @@
     font-family: var(--font-heading);
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-medium);
-    color: var(--color-accent);
+    color: var(--color-accent-on-dark);
     line-height: var(--line-height-tight);
   }
 
   .hero__tagline {
-    color: var(--color-accent);
+    color: var(--color-accent-on-dark);
     font-size: var(--font-size-md);
   }
 
   .btn {
     --btn-bg: var(--color-accent);
-    --btn-bg-hover: #D96504;
-    --btn-fg: #FFFFFF;
+    --btn-bg-hover: #FF9A3C;
+    --btn-fg: var(--color-text-on-card);
     --btn-radius: var(--radius-pill);
     --btn-pad-block: var(--space-3);
     --btn-pad-inline: var(--space-6);
@@ -176,12 +179,12 @@
 
   .btn--secondary {
     --btn-bg: transparent;
+    --btn-bg-hover: rgba(255, 255, 255, 0.12);
     --btn-fg: #FFFFFF;
     border-color: #FFFFFF;
   }
 
   .btn--secondary:hover {
-    --btn-bg-hover: rgba(255, 255, 255, 0.12);
     color: #FFFFFF;
   }
 
@@ -349,7 +352,7 @@
   .timeline__main-badge {
     display: inline-block;
     background: var(--color-badge-main);
-    color: #FFFFFF;
+    color: #000000;
     font-family: var(--font-badge);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-sm);
@@ -361,7 +364,7 @@
 
   .timeline__date {
     display: inline-block;
-    color: var(--color-accent);
+    color: var(--color-accent-on-dark);
     font-size: var(--font-size-sm);
     margin-block-end: var(--space-2);
   }
@@ -479,7 +482,7 @@
   }
 
   .footer a:hover {
-    color: var(--color-link);
+    color: var(--color-accent-on-dark);
   }
 
   .footer__row {

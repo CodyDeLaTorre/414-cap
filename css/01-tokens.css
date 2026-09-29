@@ -19,11 +19,12 @@
   --color-text-on-card-muted: #55605C;
 
   --color-accent: #F27405;
+  --color-accent-on-dark: #FFA552;
   --color-badge-main: #AE944F;
   --color-badge-secondary: #F9F5E9;
   --color-badge-secondary-text: #000000;
 
-  --color-border-on-card: #E4E0D8;
+  --color-border-on-card: #767676;
   --color-border-card: transparent;
   --color-border-on-band: rgba(255, 255, 255, 0.18);
 
@@ -88,6 +89,7 @@
   --focus-width: 3px;
   --focus-offset: 2px;
   --focus-ring: var(--focus-width) solid var(--focus-color);
+  --focus-ring-inner: 0 0 0 var(--focus-offset) #1A1A1A;
 
   --container-max: 68rem;
   --container-pad-inline: var(--space-6);

@@ -18,7 +18,7 @@
   .u-skip-link {
     position: absolute;
     left: var(--space-4);
-    top: -3rem;
+    top: -6rem;
     background: var(--color-card);
     color: var(--color-text-on-card);
     padding: var(--space-3) var(--space-4);

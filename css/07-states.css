@@ -1,6 +1,6 @@
 @layer states {
   a:hover, button:hover, [role="button"]:hover { cursor: pointer; }
-  :focus-visible { outline: var(--focus-ring) !important; outline-offset: var(--focus-offset); }
+  :focus-visible { outline: var(--focus-ring) !important; outline-offset: var(--focus-offset); box-shadow: var(--focus-ring-inner); }
   .btn:active { transform: translateY(1px); }
   [disabled], .is-disabled { opacity: .6; pointer-events: none; }
   .is-loading { opacity: .7; }
