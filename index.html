@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cody De La Torre — Front-End Developer</title>
+  <title>Home — Cody De La Torre, QA &amp; Software Developer</title>
   <meta name="description" content="Portfolio and resume site for Cody De La Torre." />
   <link rel="stylesheet" href="css/main.css" />
   <!--
@@ -52,17 +52,21 @@
       <div class="container nav__bar">
         <a class="nav__brand" href="index.html">Cody De La Torre</a>
 
-        <input class="nav__toggle-input" type="checkbox" id="nav-toggle" />
+        <input class="nav__toggle-input" type="checkbox" id="nav-toggle" aria-label="Menu" />
         <label class="nav__toggle-label" for="nav-toggle" aria-hidden="true">
           <span></span><span></span><span></span>
         </label>
 
-        <ul class="nav__list">
-          <li><a class="nav__link is-current" href="index.html">Home</a></li>
-          <li><a class="nav__link" href="experience.html">Experience</a></li>
-          <li><a class="nav__link" href="tools.html">Tools</a></li>
-          <li><a class="nav__link" href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="nav__menu" aria-label="Main">
+  
+          <ul class="nav__list">
+            <li><a class="nav__link is-current" aria-current="page" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="experience.html">Experience</a></li>
+            <li><a class="nav__link" href="tools.html">Tools</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+
+        </nav>
       </div>
     </header>
 

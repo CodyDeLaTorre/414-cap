@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tools — Cody De La Torre</title>
+  <title>Tools &amp; Skills — Cody De La Torre</title>
   <meta name="description" content="Tools and technologies Cody De La Torre works with." />
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -14,16 +14,18 @@
     <header class="nav">
       <div class="container nav__bar">
         <a class="nav__brand" href="index.html">Cody De La Torre</a>
-        <input class="nav__toggle-input" type="checkbox" id="nav-toggle" />
+        <input class="nav__toggle-input" type="checkbox" id="nav-toggle" aria-label="Menu" />
         <label class="nav__toggle-label" for="nav-toggle" aria-hidden="true">
           <span></span><span></span><span></span>
         </label>
-        <ul class="nav__list">
-          <li><a class="nav__link" href="index.html">Home</a></li>
-          <li><a class="nav__link" href="experience.html">Experience</a></li>
-          <li><a class="nav__link is-current" href="tools.html">Tools</a></li>
-          <li><a class="nav__link" href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="nav__menu" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="experience.html">Experience</a></li>
+            <li><a class="nav__link is-current" aria-current="page" href="tools.html">Tools</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -31,7 +33,7 @@
       <section class="band band--skills">
         <div class="container">
           <div class="band-header band-header--center">
-            <h1 class="tracked-caps">Skills</h1>
+            <h1 class="tracked-caps">Tools &amp; Skills</h1>
           </div>
 
           <ul class="skill-grid">
